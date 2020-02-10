@@ -6,6 +6,6 @@ First I generated a file inlcuded all information about US airport based on airp
 ## Example
 Run the program by type ```python3 weatherapi.py```
 After running you should enter the name of the airport:
-
+![image](https://github.com/BUEC500C1/api-design-HuShiyangchn/blob/master/Images/1.png)
 Then you can see the brief introduction and the weather information of the airport:
-
+![image](https://github.com/BUEC500C1/api-design-HuShiyangchn/blob/master/Images/2.png)
