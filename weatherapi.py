@@ -29,7 +29,7 @@ with open(filename) as f:
     urllist.append('&lon=')
     urllist.append(lon)
     #add your openweather key here 
-    urllist.append('&APPID=0a129340c5fe92e70a136ea7b21382d5')
+    urllist.append('&APPID=yourownkeyofapi')
     url="".join(urllist)
     r = requests.get(url)
     response_dict = r.json()
