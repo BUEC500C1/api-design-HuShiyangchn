@@ -35,7 +35,7 @@ def weather(airport):
     urllist.append('&lon=')
     urllist.append(lon)
     #add your openweather key here 
-    urllist.append('&APPID=0a129340c5fe92e70a136ea7b21382d5')
+    urllist.append('&APPID=yourownkeyofapi')
     url="".join(urllist)
     r = requests.get(url)
     response_dict = r.json()
@@ -82,4 +82,5 @@ application = tornado.web.Application([(r"/", MainHandler), ], **settings)
 
 if __name__ == "__main__":
     application.listen(8888)
+    print("The rest service is running please use your browser to get the api response. The address should be your ip address:8888?/id=The airport your are searching for")
     tornado.ioloop.IOLoop.current().start()
